@@ -6,7 +6,7 @@ def time_decoding(time):
     hour = int(time[3:5])
     min = int(time[6:8])
     time = ((day * 24) + hour) * 60 + min
-    return time
+    return time #Доработать при отсутствии каих либо цифр ставить нули
 
 # Цена за 1 грамм пластика с учетом брака (Вес)
 def prise_filament(name_filament):
@@ -63,4 +63,4 @@ def calc_print(name_filament, time_model, weight_model, psi_model, sale_prise):
     prise_time_renting = time_calculation * prise_renting()  # Расчет за аренду помещения
     prise_weight_and_time = weight_calculation + prise_time_elektric + prise_time_renting  # Стоймость вес + время
     prise_not_sale = (prise_weight_and_time + consumables_and_depreciation(prise_weight_and_time) + profit(prise_weight_and_time)) * psi_model  # Расчет без скидки
-    return print(round(sale_print(prise_not_sale, sale_prise), 2))
+    return round(sale_print(prise_not_sale, sale_prise), 2)

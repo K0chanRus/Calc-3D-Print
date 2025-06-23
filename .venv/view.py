@@ -25,14 +25,15 @@ def view():
             self.show()
 
         def clicButtonCalc(self):
-
+            name_filament = self.ui.comboBoxMaterial.currentText() # Получаем филамент
             time = self.ui.lineEditTime.text()  # Получаем времени
             weight = int(self.ui.lineEditWeight.text())  # Получаем вес
             psi = int(self.ui.lineEditPsi.text())  # Получаем количество
             sale = int(self.ui.lineEditSale.text())  # Получаем скидку
 
             time_min = calc.time_decoding(time)
-            calc.calc_print('PC', time_min, weight, psi, sale)
+            result = str(calc.calc_print(name_filament, time_min, weight, psi, sale))
+            self.ui.lineEditResult.setText(result)
 
             print()  # выводит введенные данные
 

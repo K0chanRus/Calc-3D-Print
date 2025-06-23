@@ -6,24 +6,39 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>533</width>
+    <width>552</width>
     <height>360</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>533</width>
+    <width>552</width>
     <height>360</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>533</width>
+    <width>552</width>
     <height>360</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Калькулятор 3D печати</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons8.gif</normaloff>icons8.gif</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(43, 45, 48);
+alternate-background-color: rgb(30, 31, 34);
+color: rgb(202, 211, 211);
+selection-color: rgb(67, 69, 74);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
@@ -31,9 +46,16 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>251</width>
+      <width>271</width>
       <height>181</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="title">
      <string>Расчет печати</string>
@@ -47,6 +69,12 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="text">
       <string>Филамент:</string>
      </property>
@@ -54,8 +82,8 @@
     <widget class="QComboBox" name="comboBoxMaterial">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>30</y>
+       <x>150</x>
+       <y>20</y>
        <width>111</width>
        <height>23</height>
       </rect>
@@ -66,7 +94,7 @@
      <property name="currentText">
       <string/>
      </property>
-     <property name="placeholderText">
+     <property name="placeholderText" stdset="0">
       <string/>
      </property>
     </widget>
@@ -86,8 +114,8 @@
     <widget class="QLineEdit" name="lineEditTime">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>60</y>
+       <x>150</x>
+       <y>50</y>
        <width>113</width>
        <height>22</height>
       </rect>
@@ -101,12 +129,15 @@
      <property name="text">
       <string>00:00:00</string>
      </property>
+     <property name="cursorPosition">
+      <number>1</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditWeight">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>90</y>
+       <x>150</x>
+       <y>80</y>
        <width>113</width>
        <height>22</height>
       </rect>
@@ -120,12 +151,15 @@
      <property name="text">
       <string>0</string>
      </property>
+     <property name="cursorPosition">
+      <number>1</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditPsi">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>120</y>
+       <x>150</x>
+       <y>110</y>
        <width>113</width>
        <height>22</height>
       </rect>
@@ -139,12 +173,15 @@
      <property name="text">
       <string>1</string>
      </property>
+     <property name="cursorPosition">
+      <number>1</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditSale">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>150</y>
+       <x>150</x>
+       <y>140</y>
        <width>113</width>
        <height>22</height>
       </rect>
@@ -157,6 +194,9 @@
      </property>
      <property name="text">
       <string>0</string>
+     </property>
+     <property name="cursorPosition">
+      <number>1</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -182,7 +222,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Количество шт:</string>
+      <string>Количество: шт</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -204,9 +244,16 @@
      <rect>
       <x>10</x>
       <y>210</y>
-      <width>251</width>
+      <width>271</width>
       <height>91</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="title">
      <string>Данные о клиенте</string>
@@ -216,7 +263,7 @@
       <rect>
        <x>52</x>
        <y>30</y>
-       <width>191</width>
+       <width>211</width>
        <height>22</height>
       </rect>
      </property>
@@ -229,7 +276,7 @@
       <rect>
        <x>72</x>
        <y>60</y>
-       <width>171</width>
+       <width>191</width>
        <height>22</height>
       </rect>
      </property>
@@ -245,12 +292,12 @@
       <rect>
        <x>10</x>
        <y>30</y>
-       <width>58</width>
-       <height>15</height>
+       <width>41</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>ФИО</string>
+      <string>ФИО:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -276,6 +323,13 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>Расчитать</string>
     </property>
@@ -289,6 +343,13 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>Заказать</string>
     </property>
@@ -296,11 +357,18 @@
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>290</x>
       <y>20</y>
       <width>251</width>
       <height>281</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="title">
      <string>Данные из расчета:</string>
@@ -421,6 +489,12 @@
        <height>22</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditNumbeOrder">
      <property name="enabled">
@@ -445,7 +519,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Электроэнергия</string>
+      <string>Электроэнергия:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_11">
@@ -458,7 +532,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Расходники</string>
+      <string>Расходники:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -471,7 +545,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Амортизация</string>
+      <string>Амортизация:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_13">
@@ -496,8 +570,14 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="text">
-      <string>Итого</string>
+      <string>Итого:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_15">
@@ -520,8 +600,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>533</width>
-     <height>20</height>
+     <width>552</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
